@@ -53,6 +53,26 @@ associated files.`,
 	},
 }
 
+func DeleteRun() {
+	fmt.Println("Deleting local Kubernetes cluster...")
+	api, err := machine.NewAPIClient(clientType)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error getting client: %s\n", err)
+		os.Exit(1)
+	}
+	defer api.Close()
+
+	if err = cluster.DeleteHost(api); err != nil {
+		fmt.Println("Errors occurred deleting machine: ", err)
+		os.Exit(1)
+	}
+	fmt.Println("Machine deleted.")
+
+	if err := cmdUtil.KillMountProcess(); err != nil {
+		fmt.Println("Errors occurred deleting mount process: ", err)
+	}
+}
+
 func init() {
 	RootCmd.AddCommand(deleteCmd)
 }
