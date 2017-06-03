@@ -26,11 +26,11 @@ import (
 
 	"github.com/golang/glog"
 	"github.com/spf13/cobra"
-	cmdUtil "k8s.io/minikube/cmd/util"
-	"k8s.io/minikube/pkg/minikube/cluster"
-	"k8s.io/minikube/pkg/minikube/config"
-	"k8s.io/minikube/pkg/minikube/machine"
-	"k8s.io/minikube/third_party/go9p/ufs"
+	cmdUtil "github.com/hasura/minikube/cmd/util"
+	"github.com/hasura/minikube/pkg/minikube/cluster"
+	"github.com/hasura/minikube/pkg/minikube/config"
+	"github.com/hasura/minikube/pkg/minikube/machine"
+	"github.com/hasura/minikube/third_party/go9p/ufs"
 )
 
 var mountIP string

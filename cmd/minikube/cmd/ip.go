@@ -22,8 +22,8 @@ import (
 
 	"github.com/golang/glog"
 	"github.com/spf13/cobra"
-	"k8s.io/minikube/pkg/minikube/config"
-	"k8s.io/minikube/pkg/minikube/machine"
+	"github.com/hasura/minikube/pkg/minikube/config"
+	"github.com/hasura/minikube/pkg/minikube/machine"
 )
 
 // ipCmd represents the ip command

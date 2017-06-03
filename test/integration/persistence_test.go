@@ -26,8 +26,8 @@ import (
 
 	"github.com/docker/machine/libmachine/state"
 	"k8s.io/kubernetes/pkg/api"
-	commonutil "k8s.io/minikube/pkg/util"
-	"k8s.io/minikube/test/integration/util"
+	commonutil "github.com/hasura/minikube/pkg/util"
+	"github.com/hasura/minikube/test/integration/util"
 )
 
 func TestPersistence(t *testing.T) {

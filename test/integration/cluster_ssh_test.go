@@ -22,7 +22,7 @@ import (
 	"strings"
 	"testing"
 
-	"k8s.io/minikube/test/integration/util"
+	"github.com/hasura/minikube/test/integration/util"
 )
 
 func testClusterSSH(t *testing.T) {

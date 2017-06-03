@@ -28,9 +28,9 @@ import (
 
 	"github.com/blang/semver"
 	"github.com/pkg/errors"
-	"k8s.io/minikube/pkg/minikube/constants"
-	"k8s.io/minikube/pkg/minikube/kubernetes_versions"
-	"k8s.io/minikube/pkg/version"
+	"github.com/hasura/minikube/pkg/minikube/constants"
+	"github.com/hasura/minikube/pkg/minikube/kubernetes_versions"
+	"github.com/hasura/minikube/pkg/version"
 )
 
 type RetriableError struct {

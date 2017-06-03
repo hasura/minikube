@@ -19,7 +19,7 @@ package config
 import (
 	"testing"
 
-	pkgConfig "k8s.io/minikube/pkg/minikube/config"
+	pkgConfig "github.com/hasura/minikube/pkg/minikube/config"
 )
 
 var minikubeConfig = pkgConfig.MinikubeConfig{

@@ -22,7 +22,7 @@ import (
 	"strings"
 	"testing"
 
-	"k8s.io/minikube/pkg/util"
+	"github.com/hasura/minikube/pkg/util"
 )
 
 func TestGetStartCommandCustomValues(t *testing.T) {

@@ -21,7 +21,7 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	pkgConfig "k8s.io/minikube/pkg/minikube/config"
+	pkgConfig "github.com/hasura/minikube/pkg/minikube/config"
 )
 
 var ProfileCmd = &cobra.Command{

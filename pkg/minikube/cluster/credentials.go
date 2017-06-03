@@ -20,7 +20,7 @@ import (
 	"net"
 
 	"github.com/pkg/errors"
-	"k8s.io/minikube/pkg/util"
+	"github.com/hasura/minikube/pkg/util"
 )
 
 var (

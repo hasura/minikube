@@ -29,12 +29,12 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
-	configCmd "k8s.io/minikube/cmd/minikube/cmd/config"
-	"k8s.io/minikube/cmd/util"
-	"k8s.io/minikube/pkg/minikube/config"
-	"k8s.io/minikube/pkg/minikube/constants"
-	"k8s.io/minikube/pkg/minikube/machine"
-	"k8s.io/minikube/pkg/minikube/notify"
+	configCmd "github.com/hasura/minikube/cmd/minikube/cmd/config"
+	"github.com/hasura/minikube/cmd/util"
+	"github.com/hasura/minikube/pkg/minikube/config"
+	"github.com/hasura/minikube/pkg/minikube/constants"
+	"github.com/hasura/minikube/pkg/minikube/machine"
+	"github.com/hasura/minikube/pkg/minikube/notify"
 )
 
 var dirs = [...]string{

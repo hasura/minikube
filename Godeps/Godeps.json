@@ -1,5 +1,5 @@
 {
-	"ImportPath": "k8s.io/minikube",
+	"ImportPath": "github.com/hasura/minikube",
 	"GoVersion": "go1.8",
 	"GodepVersion": "v79",
 	"Packages": [
