@@ -30,13 +30,13 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	cmdUtil "k8s.io/minikube/cmd/util"
-	"k8s.io/minikube/pkg/minikube/cluster"
-	"k8s.io/minikube/pkg/minikube/constants"
-	"k8s.io/minikube/pkg/minikube/kubeconfig"
-	"k8s.io/minikube/pkg/minikube/machine"
-	"k8s.io/minikube/pkg/util"
-	pkgutil "k8s.io/minikube/pkg/util"
+	cmdUtil "github.com/hasura/minikube/cmd/util"
+	"github.com/hasura/minikube/pkg/minikube/cluster"
+	"github.com/hasura/minikube/pkg/minikube/constants"
+	"github.com/hasura/minikube/pkg/minikube/kubeconfig"
+	"github.com/hasura/minikube/pkg/minikube/machine"
+	"github.com/hasura/minikube/pkg/util"
+	pkgutil "github.com/hasura/minikube/pkg/util"
 )
 
 const (

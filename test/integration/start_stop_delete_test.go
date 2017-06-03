@@ -24,8 +24,8 @@ import (
 	"testing"
 	"time"
 
-	commonutil "k8s.io/minikube/pkg/util"
-	"k8s.io/minikube/test/integration/util"
+	commonutil "github.com/hasura/minikube/pkg/util"
+	"github.com/hasura/minikube/test/integration/util"
 )
 
 func TestStartStop(t *testing.T) {

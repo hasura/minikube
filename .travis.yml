@@ -5,7 +5,7 @@ dist: trusty
 
 go:
   - 1.7.1
-go_import_path: k8s.io/minikube
+go_import_path: github.com/hasura/minikube
 
 install:
   - sudo apt-get -qqy install libvirt-dev

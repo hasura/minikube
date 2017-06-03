@@ -29,7 +29,7 @@ import (
 	utilnet "k8s.io/apimachinery/pkg/util/net"
 	"k8s.io/apiserver/pkg/util/flag"
 
-	"k8s.io/minikube/pkg/util"
+	"github.com/hasura/minikube/pkg/util"
 )
 
 const serverInterval = 200

@@ -37,7 +37,7 @@ import (
 
 const (
 	resyncPeriod              = 15 * time.Second
-	provisionerName           = "k8s.io/minikube-hostpath"
+	provisionerName           = "github.com/hasura/minikube-hostpath"
 	exponentialBackOffOnError = false
 	failedRetryThreshold      = 5
 	leasePeriod               = leaderelection.DefaultLeaseDuration

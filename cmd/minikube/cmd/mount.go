@@ -23,10 +23,10 @@ import (
 
 	"github.com/golang/glog"
 	"github.com/spf13/cobra"
-	"k8s.io/minikube/pkg/minikube/cluster"
-	"k8s.io/minikube/pkg/minikube/constants"
-	"k8s.io/minikube/pkg/minikube/machine"
-	"k8s.io/minikube/third_party/go9p/ufs"
+	"github.com/hasura/minikube/pkg/minikube/cluster"
+	"github.com/hasura/minikube/pkg/minikube/constants"
+	"github.com/hasura/minikube/pkg/minikube/machine"
+	"github.com/hasura/minikube/third_party/go9p/ufs"
 )
 
 // mountCmd represents the mount command

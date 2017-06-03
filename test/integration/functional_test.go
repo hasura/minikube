@@ -21,7 +21,7 @@ package integration
 import (
 	"testing"
 
-	"k8s.io/minikube/test/integration/util"
+	"github.com/hasura/minikube/test/integration/util"
 )
 
 func TestFunctional(t *testing.T) {

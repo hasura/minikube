@@ -24,8 +24,8 @@ import (
 	"github.com/golang/glog"
 	"github.com/spf13/cobra"
 
-	"k8s.io/minikube/pkg/minikube/config"
-	"k8s.io/minikube/pkg/minikube/constants"
+	"github.com/hasura/minikube/pkg/minikube/config"
+	"github.com/hasura/minikube/pkg/minikube/constants"
 )
 
 var configViewFormat string
@@ -51,7 +51,7 @@ var configViewCmd = &cobra.Command{
 func init() {
 	configViewCmd.Flags().StringVar(&configViewFormat, "format", constants.DefaultConfigViewFormat,
 		`Go template format string for the config view output.  The format for Go templates can be found here: https://golang.org/pkg/text/template/
-For the list of accessible variables for the template, see the struct values here: https://godoc.org/k8s.io/minikube/cmd/minikube/cmd/config#ConfigViewTemplate`)
+For the list of accessible variables for the template, see the struct values here: https://godoc.org/github.com/hasura/minikube/cmd/minikube/cmd/config#ConfigViewTemplate`)
 	ConfigCmd.AddCommand(configViewCmd)
 }
 

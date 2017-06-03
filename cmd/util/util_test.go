@@ -24,7 +24,7 @@ import (
 	"strings"
 	"testing"
 
-	"k8s.io/minikube/pkg/version"
+	"github.com/hasura/minikube/pkg/version"
 
 	"github.com/pkg/errors"
 )

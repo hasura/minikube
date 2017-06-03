@@ -24,7 +24,7 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/util/homedir"
 	"k8s.io/kubernetes/pkg/version"
-	minikubeVersion "k8s.io/minikube/pkg/version"
+	minikubeVersion "github.com/hasura/minikube/pkg/version"
 )
 
 // MachineName is the name to use for the VM.

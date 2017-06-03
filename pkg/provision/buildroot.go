@@ -30,7 +30,7 @@ import (
 	"github.com/docker/machine/libmachine/provision"
 	"github.com/docker/machine/libmachine/provision/pkgaction"
 	"github.com/docker/machine/libmachine/swarm"
-	"k8s.io/minikube/pkg/util"
+	"github.com/hasura/minikube/pkg/util"
 )
 
 type BuildrootProvisioner struct {

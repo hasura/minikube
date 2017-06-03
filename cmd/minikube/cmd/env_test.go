@@ -22,8 +22,8 @@ import (
 
 	"github.com/docker/machine/libmachine"
 	"github.com/docker/machine/libmachine/host"
-	"k8s.io/minikube/pkg/minikube/constants"
-	"k8s.io/minikube/pkg/minikube/tests"
+	"github.com/hasura/minikube/pkg/minikube/constants"
+	"github.com/hasura/minikube/pkg/minikube/tests"
 )
 
 type FakeShellDetector struct {

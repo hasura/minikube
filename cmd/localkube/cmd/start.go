@@ -26,8 +26,8 @@ import (
 	"k8s.io/apiserver/pkg/util/feature"
 	"k8s.io/kubernetes/pkg/capabilities"
 	"k8s.io/kubernetes/pkg/kubelet/types"
-	"k8s.io/minikube/pkg/localkube"
-	"k8s.io/minikube/pkg/version"
+	"github.com/hasura/minikube/pkg/localkube"
+	"github.com/hasura/minikube/pkg/version"
 )
 
 // The main instance of the current localkube server that is started

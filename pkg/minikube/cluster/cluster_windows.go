@@ -26,7 +26,7 @@ import (
 	"github.com/docker/machine/libmachine/drivers"
 	"github.com/docker/machine/libmachine/host"
 	"github.com/pkg/errors"
-	"k8s.io/minikube/pkg/minikube/constants"
+	"github.com/hasura/minikube/pkg/minikube/constants"
 )
 
 func createHypervHost(config MachineConfig) drivers.Driver {

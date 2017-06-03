@@ -25,7 +25,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"k8s.io/minikube/pkg/minikube/constants"
+	"github.com/hasura/minikube/pkg/minikube/constants"
 
 	"github.com/docker/machine/drivers/virtualbox"
 	"github.com/docker/machine/libmachine"

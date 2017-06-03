@@ -56,7 +56,7 @@ The bootable ISO image will be available in `out/minikube.iso`.
 $ ./out/minikube start \
     --container-runtime=rkt \
     --network-plugin=cni \
-    --iso-url=file:///$GOPATH/k8s.io/minikube/out/buildroot/output/images/rootfs.iso9660
+    --iso-url=file:///$GOPATH/github.com/hasura/minikube/out/buildroot/output/images/rootfs.iso9660
 ```
 
 When testing a custom image and something goes bad, you will have to delete the

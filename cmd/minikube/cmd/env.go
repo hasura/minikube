@@ -30,10 +30,10 @@ import (
 	"github.com/golang/glog"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	cmdUtil "k8s.io/minikube/cmd/util"
-	"k8s.io/minikube/pkg/minikube/cluster"
-	"k8s.io/minikube/pkg/minikube/constants"
-	"k8s.io/minikube/pkg/minikube/machine"
+	cmdUtil "github.com/hasura/minikube/cmd/util"
+	"github.com/hasura/minikube/pkg/minikube/cluster"
+	"github.com/hasura/minikube/pkg/minikube/constants"
+	"github.com/hasura/minikube/pkg/minikube/machine"
 )
 
 const (

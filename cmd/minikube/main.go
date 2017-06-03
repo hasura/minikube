@@ -18,12 +18,12 @@ package main
 
 import (
 	"github.com/pkg/profile"
-	"k8s.io/minikube/cmd/minikube/cmd"
-	"k8s.io/minikube/pkg/minikube/machine"
+	"github.com/hasura/minikube/cmd/minikube/cmd"
+	"github.com/hasura/minikube/pkg/minikube/machine"
 
 	"os"
 
-	_ "k8s.io/minikube/pkg/provision"
+	_ "github.com/hasura/minikube/pkg/provision"
 )
 
 const minikubeEnvPrefix = "MINIKUBE_ENABLE_PROFILING"

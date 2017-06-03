@@ -25,8 +25,8 @@ import (
 
 	units "github.com/docker/go-units"
 	"github.com/pkg/errors"
-	"k8s.io/minikube/pkg/minikube/assets"
-	"k8s.io/minikube/pkg/minikube/constants"
+	"github.com/hasura/minikube/pkg/minikube/assets"
+	"github.com/hasura/minikube/pkg/minikube/constants"
 )
 
 func IsValidDriver(string, driver string) error {

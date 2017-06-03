@@ -23,7 +23,7 @@ import (
 	"io"
 	"os"
 
-	"k8s.io/minikube/pkg/minikube/constants"
+	"github.com/hasura/minikube/pkg/minikube/constants"
 )
 
 const (

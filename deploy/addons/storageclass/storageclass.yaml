@@ -8,4 +8,4 @@ metadata:
   labels:
     kubernetes.io/cluster-service: "true"
 
-provisioner: k8s.io/minikube-hostpath
+provisioner: github.com/hasura/minikube-hostpath

@@ -21,8 +21,8 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	"k8s.io/minikube/pkg/minikube/cluster"
-	"k8s.io/minikube/pkg/minikube/machine"
+	"github.com/hasura/minikube/pkg/minikube/cluster"
+	"github.com/hasura/minikube/pkg/minikube/machine"
 )
 
 // deleteCmd represents the delete command
