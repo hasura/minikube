@@ -39,7 +39,7 @@ The bootable ISO image will be available in `out/minikube.iso`.
 $ ./out/minikube start \
     --container-runtime=rkt \
     --network-plugin=cni \
-    --iso-url=file:///$GOPATH/github.com/hasura/minikube/out/minikube.iso
+    --iso-url=file:///$GOPATH/gitlab.com/hasura/hasuractl-go/pkg/minikube/out/minikube.iso
 ```
 
 ### Buildroot configuration

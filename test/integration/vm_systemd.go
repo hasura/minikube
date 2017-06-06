@@ -23,7 +23,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hasura/minikube/test/integration/util"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/test/integration/util"
 )
 
 func testVMSystemd(t *testing.T) {

@@ -30,9 +30,9 @@ import (
 
 	"k8s.io/client-go/pkg/api"
 	"k8s.io/client-go/pkg/api/v1"
-	commonutil "github.com/hasura/minikube/pkg/util"
+	commonutil "gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
 
-	"github.com/hasura/minikube/test/integration/util"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/test/integration/util"
 )
 
 var (

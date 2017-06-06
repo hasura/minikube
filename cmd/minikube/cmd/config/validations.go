@@ -25,8 +25,8 @@ import (
 
 	units "github.com/docker/go-units"
 	"github.com/pkg/errors"
-	"github.com/hasura/minikube/pkg/minikube/assets"
-	"github.com/hasura/minikube/pkg/minikube/constants"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/assets"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
 )
 
 func IsValidDriver(string, driver string) error {

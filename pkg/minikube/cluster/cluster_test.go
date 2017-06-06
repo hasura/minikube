@@ -31,10 +31,10 @@ import (
 	"github.com/docker/machine/libmachine/host"
 	"github.com/docker/machine/libmachine/provision"
 	"github.com/docker/machine/libmachine/state"
-	"github.com/hasura/minikube/pkg/minikube/assets"
-	"github.com/hasura/minikube/pkg/minikube/config"
-	"github.com/hasura/minikube/pkg/minikube/constants"
-	"github.com/hasura/minikube/pkg/minikube/tests"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/assets"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/config"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/tests"
 )
 
 type MockDownloader struct{}

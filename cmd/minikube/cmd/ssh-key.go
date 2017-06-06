@@ -22,8 +22,8 @@ import (
 	"path/filepath"
 
 	"github.com/spf13/cobra"
-	"github.com/hasura/minikube/pkg/minikube/config"
-	"github.com/hasura/minikube/pkg/minikube/constants"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/config"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
 )
 
 // sshKeyCmd represents the sshKey command

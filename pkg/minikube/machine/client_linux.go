@@ -24,7 +24,7 @@ import (
 	"github.com/docker/machine/libmachine/drivers/plugin"
 	"github.com/golang/glog"
 	"github.com/pkg/errors"
-	pkgDrivers "github.com/hasura/minikube/pkg/minikube/machine/drivers"
+	pkgDrivers "gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/machine/drivers"
 )
 
 var driverMap = map[string]driverGetter{

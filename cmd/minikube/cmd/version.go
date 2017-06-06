@@ -21,7 +21,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/hasura/minikube/pkg/version"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/version"
 )
 
 var versionCmd = &cobra.Command{

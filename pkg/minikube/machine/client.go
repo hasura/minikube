@@ -25,8 +25,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/hasura/minikube/pkg/minikube/constants"
-	"github.com/hasura/minikube/pkg/provision"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/provision"
 
 	"github.com/docker/machine/drivers/virtualbox"
 	"github.com/docker/machine/libmachine"

@@ -22,7 +22,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hasura/minikube/pkg/util"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
 )
 
 func TestGetStartCommandCustomValues(t *testing.T) {

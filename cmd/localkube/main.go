@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/hasura/minikube/cmd/localkube/cmd"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/cmd/localkube/cmd"
 )
 
 func main() {

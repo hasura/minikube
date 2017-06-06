@@ -22,7 +22,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/hasura/minikube/pkg/minikube/constants"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
 
 	"github.com/golang/glog"
 	"github.com/pkg/errors"

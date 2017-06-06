@@ -37,7 +37,7 @@ import (
 
 const (
 	resyncPeriod              = 15 * time.Second
-	provisionerName           = "github.com/hasura/minikube-hostpath"
+	provisionerName           = "gitlab.com/hasura/hasuractl-go/pkg/minikube-hostpath"
 	exponentialBackOffOnError = false
 	failedRetryThreshold      = 5
 	leasePeriod               = leaderelection.DefaultLeaseDuration

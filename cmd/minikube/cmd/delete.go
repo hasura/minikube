@@ -21,13 +21,13 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	cmdUtil "github.com/hasura/minikube/cmd/util"
-	"github.com/hasura/minikube/pkg/minikube/cluster"
-	"github.com/hasura/minikube/pkg/minikube/machine"
+	cmdUtil "gitlab.com/hasura/hasuractl-go/pkg/minikube/cmd/util"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/cluster"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/machine"
 )
 
 // deleteCmd represents the delete command
-var deleteCmd = &cobra.Command{
+var DeleteCmd = &cobra.Command{
 	Use:   "delete",
 	Short: "Deletes a local kubernetes cluster",
 	Long: `Deletes a local kubernetes cluster. This command deletes the VM, and removes all
@@ -53,26 +53,6 @@ associated files.`,
 	},
 }
 
-func DeleteRun() {
-	fmt.Println("Deleting local Kubernetes cluster...")
-	api, err := machine.NewAPIClient(clientType)
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error getting client: %s\n", err)
-		os.Exit(1)
-	}
-	defer api.Close()
-
-	if err = cluster.DeleteHost(api); err != nil {
-		fmt.Println("Errors occurred deleting machine: ", err)
-		os.Exit(1)
-	}
-	fmt.Println("Machine deleted.")
-
-	if err := cmdUtil.KillMountProcess(); err != nil {
-		fmt.Println("Errors occurred deleting mount process: ", err)
-	}
-}
-
 func init() {
-	RootCmd.AddCommand(deleteCmd)
+	RootCmd.AddCommand(DeleteCmd)
 }

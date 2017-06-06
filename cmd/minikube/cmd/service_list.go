@@ -25,8 +25,8 @@ import (
 	"github.com/spf13/cobra"
 	"k8s.io/kubernetes/pkg/api/v1"
 
-	"github.com/hasura/minikube/pkg/minikube/machine"
-	"github.com/hasura/minikube/pkg/minikube/service"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/machine"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/service"
 )
 
 var serviceListNamespace string

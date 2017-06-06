@@ -16,7 +16,7 @@
 
 set -e
 
-REPO_PATH="github.com/hasura/minikube"
+REPO_PATH="gitlab.com/hasura/hasuractl-go/pkg/minikube"
 
 # Check for python on host, and use it if possible, otherwise fall back on python dockerized
 if [[ -f $(which python 2>&1) ]]; then

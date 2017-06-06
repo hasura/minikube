@@ -22,9 +22,9 @@ import (
 	"path/filepath"
 
 	"github.com/docker/machine/libmachine/drivers"
-	cfg "github.com/hasura/minikube/pkg/minikube/config"
-	"github.com/hasura/minikube/pkg/minikube/constants"
-	pkgDrivers "github.com/hasura/minikube/pkg/minikube/machine/drivers"
+	cfg "gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/config"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
+	pkgDrivers "gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/machine/drivers"
 )
 
 type kvmDriver struct {

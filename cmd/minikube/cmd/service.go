@@ -22,9 +22,9 @@ import (
 	"text/template"
 
 	"github.com/spf13/cobra"
-	"github.com/hasura/minikube/pkg/minikube/cluster"
-	"github.com/hasura/minikube/pkg/minikube/machine"
-	"github.com/hasura/minikube/pkg/minikube/service"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/cluster"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/machine"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/service"
 )
 
 const defaultServiceFormatTemplate = "http://{{.IP}}:{{.Port}}"

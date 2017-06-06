@@ -24,8 +24,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hasura/minikube/pkg/minikube/config"
-	"github.com/hasura/minikube/pkg/version"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/config"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/version"
 
 	"github.com/pkg/errors"
 	"github.com/spf13/viper"

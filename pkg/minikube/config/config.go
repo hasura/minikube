@@ -24,7 +24,7 @@ import (
 	"os"
 
 	"github.com/spf13/viper"
-	"github.com/hasura/minikube/pkg/minikube/constants"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
 )
 
 const (

@@ -30,11 +30,11 @@ import (
 	"github.com/golang/glog"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	cmdUtil "github.com/hasura/minikube/cmd/util"
-	"github.com/hasura/minikube/pkg/minikube/cluster"
-	"github.com/hasura/minikube/pkg/minikube/config"
-	"github.com/hasura/minikube/pkg/minikube/constants"
-	"github.com/hasura/minikube/pkg/minikube/machine"
+	cmdUtil "gitlab.com/hasura/hasuractl-go/pkg/minikube/cmd/util"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/cluster"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/config"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/machine"
 )
 
 const (

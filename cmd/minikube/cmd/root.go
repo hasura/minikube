@@ -29,12 +29,12 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
-	configCmd "github.com/hasura/minikube/cmd/minikube/cmd/config"
-	"github.com/hasura/minikube/cmd/util"
-	"github.com/hasura/minikube/pkg/minikube/config"
-	"github.com/hasura/minikube/pkg/minikube/constants"
-	"github.com/hasura/minikube/pkg/minikube/machine"
-	"github.com/hasura/minikube/pkg/minikube/notify"
+	configCmd "gitlab.com/hasura/hasuractl-go/pkg/minikube/cmd/minikube/cmd/config"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/cmd/util"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/config"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/machine"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/notify"
 )
 
 var dirs = [...]string{
@@ -55,7 +55,7 @@ const (
 )
 
 var (
-	enableUpdateNotification = true
+	enableUpdateNotification = false
 	clientType               machine.ClientType
 )
 
@@ -136,7 +136,7 @@ func setFlagsUsingViper() {
 func init() {
 	RootCmd.PersistentFlags().Bool(showLibmachineLogs, false, "Deprecated: To enable libmachine logs, set --v=3 or higher")
 	RootCmd.PersistentFlags().Bool(useVendoredDriver, false, "Use the vendored in drivers instead of RPC")
-	RootCmd.PersistentFlags().StringP(config.MachineProfile, "p", constants.DefaultMachineName, `The name of the minikube VM being used.  
+	RootCmd.PersistentFlags().StringP(config.MachineProfile, "p", constants.DefaultMachineName, `The name of the minikube VM being used.
 	This can be modified to allow for multiple minikube instances to be run independently`)
 	RootCmd.AddCommand(configCmd.ConfigCmd)
 	RootCmd.AddCommand(configCmd.AddonsCmd)

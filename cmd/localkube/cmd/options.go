@@ -21,9 +21,9 @@ import (
 
 	flag "github.com/spf13/pflag"
 
-	"github.com/hasura/minikube/pkg/localkube"
-	"github.com/hasura/minikube/pkg/minikube/constants"
-	"github.com/hasura/minikube/pkg/util"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/localkube"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
 )
 
 func NewLocalkubeServer() *localkube.LocalkubeServer {
