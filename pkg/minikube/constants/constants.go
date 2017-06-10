@@ -21,10 +21,10 @@ import (
 	"os"
 	"path/filepath"
 
+	minikubeVersion "gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/version"
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/util/homedir"
 	"k8s.io/kubernetes/pkg/version"
-	minikubeVersion "gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/version"
 )
 
 // APIServerPort is the port that the API server should listen on.
@@ -40,13 +40,13 @@ func GetMinipath() string {
 	if os.Getenv(MinikubeHome) == "" {
 		return DefaultMinipath
 	}
-	if filepath.Base(os.Getenv(MinikubeHome)) == ".minikube" {
+	if filepath.Base(os.Getenv(MinikubeHome)) == ".minihasura" {
 		return os.Getenv(MinikubeHome)
 	}
-	return filepath.Join(os.Getenv(MinikubeHome), ".minikube")
+	return filepath.Join(os.Getenv(MinikubeHome), ".minihasura")
 }
 
-var DefaultMinipath = filepath.Join(homedir.HomeDir(), ".minikube")
+var DefaultMinipath = filepath.Join(homedir.HomeDir(), ".minihasura")
 
 // KubeconfigPath is the path to the Kubernetes client config
 var KubeconfigPath = clientcmd.RecommendedHomeFile
@@ -55,13 +55,13 @@ var KubeconfigPath = clientcmd.RecommendedHomeFile
 var KubeconfigEnvVar = clientcmd.RecommendedConfigPathEnvVar
 
 // MinikubeContext is the kubeconfig context name used for minikube
-const MinikubeContext = "minikube"
+const MinikubeContext = "minihasura"
 
 // MinikubeEnvPrefix is the prefix for the environmental variables
 const MinikubeEnvPrefix = "MINIKUBE"
 
 // DefaultMachineName is the default name for the VM
-const DefaultMachineName = "minikube"
+const DefaultMachineName = "minihasura"
 
 // The name of the default storage class provisioner
 const DefaultStorageClassProvisioner = "standard"
