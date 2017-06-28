@@ -21,7 +21,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"k8s.io/minikube/pkg/minikube/service"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/service"
 
 	"github.com/spf13/cobra"
 )

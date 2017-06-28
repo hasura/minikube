@@ -21,13 +21,13 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	cmdUtil "k8s.io/minikube/cmd/util"
-	"k8s.io/minikube/pkg/minikube/cluster"
-	"k8s.io/minikube/pkg/minikube/machine"
+	cmdUtil "gitlab.com/hasura/hasuractl-go/pkg/minikube/cmd/util"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/cluster"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/machine"
 )
 
 // deleteCmd represents the delete command
-var deleteCmd = &cobra.Command{
+var DeleteCmd = &cobra.Command{
 	Use:   "delete",
 	Short: "Deletes a local kubernetes cluster",
 	Long: `Deletes a local kubernetes cluster. This command deletes the VM, and removes all
@@ -54,5 +54,5 @@ associated files.`,
 }
 
 func init() {
-	RootCmd.AddCommand(deleteCmd)
+	RootCmd.AddCommand(DeleteCmd)
 }

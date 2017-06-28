@@ -20,10 +20,10 @@ import (
 	"os"
 
 	"github.com/pkg/profile"
-	"k8s.io/minikube/cmd/minikube/cmd"
-	"k8s.io/minikube/pkg/minikube/constants"
-	"k8s.io/minikube/pkg/minikube/machine"
-	_ "k8s.io/minikube/pkg/provision"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/cmd/minikube/cmd"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/machine"
+	_ "gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/provision"
 )
 
 const minikubeEnvPrefix = "MINIKUBE_ENABLE_PROFILING"

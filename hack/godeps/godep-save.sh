@@ -18,7 +18,7 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-MINIKUBE_ROOT=${GOPATH}/src/k8s.io/minikube
+MINIKUBE_ROOT=${GOPATH}/src/gitlab.com/hasura/hasuractl-go/pkg/minikube
 KUBE_ROOT=${GOPATH}/src/k8s.io/kubernetes
 
 source ${MINIKUBE_ROOT}/hack/godeps/utils.sh

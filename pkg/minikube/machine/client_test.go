@@ -29,7 +29,7 @@ import (
 	"github.com/docker/machine/libmachine/drivers"
 
 	"github.com/docker/machine/libmachine/drivers/plugin/localbinary"
-	"k8s.io/minikube/pkg/minikube/constants"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
 )
 
 var expectedDrivers = map[string]drivers.Driver{

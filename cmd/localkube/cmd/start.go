@@ -27,8 +27,8 @@ import (
 
 	"k8s.io/kubernetes/pkg/capabilities"
 	"k8s.io/kubernetes/pkg/kubelet/types"
-	"k8s.io/minikube/pkg/localkube"
-	"k8s.io/minikube/pkg/version"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/localkube"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/version"
 )
 
 // The main instance of the current localkube server that is started

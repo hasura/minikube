@@ -25,7 +25,7 @@ import (
 
 	"text/template"
 
-	"k8s.io/minikube/pkg/minikube/constants"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
 )
 
 // Kill any running instances.

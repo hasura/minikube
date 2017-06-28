@@ -30,7 +30,7 @@ import (
 	"time"
 
 	"k8s.io/kubernetes/pkg/api"
-	commonutil "k8s.io/minikube/pkg/util"
+	commonutil "gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
 )
 
 const kubectlBinary = "kubectl"

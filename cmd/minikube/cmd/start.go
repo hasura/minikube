@@ -31,15 +31,15 @@ import (
 	"github.com/golang/glog"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	cmdUtil "k8s.io/minikube/cmd/util"
-	"k8s.io/minikube/pkg/minikube/cluster"
-	cfg "k8s.io/minikube/pkg/minikube/config"
-	"k8s.io/minikube/pkg/minikube/constants"
-	"k8s.io/minikube/pkg/minikube/kubeconfig"
-	"k8s.io/minikube/pkg/minikube/kubernetes_versions"
-	"k8s.io/minikube/pkg/minikube/machine"
-	"k8s.io/minikube/pkg/util"
-	pkgutil "k8s.io/minikube/pkg/util"
+	cmdUtil "gitlab.com/hasura/hasuractl-go/pkg/minikube/cmd/util"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/cluster"
+	cfg "gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/config"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/kubeconfig"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/kubernetes_versions"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/machine"
+	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
+	pkgutil "gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
 )
 
 const (
@@ -77,10 +77,10 @@ var startCmd = &cobra.Command{
 	Short: "Starts a local kubernetes cluster",
 	Long: `Starts a local kubernetes cluster using VM. This command
 assumes you have already installed one of the VM drivers: virtualbox/vmwarefusion/kvm/xhyve/hyperv.`,
-	Run: runStart,
+	Run: RunStart,
 }
 
-func runStart(cmd *cobra.Command, args []string) {
+func RunStart(cmd *cobra.Command, args []string) {
 	api, err := machine.NewAPIClient()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error getting client: %s\n", err)
@@ -249,10 +249,10 @@ You will need to move the files to the appropriate location and then set the cor
 	sudo mv /root/.kube $HOME/.kube # this will overwrite any config you have.  You may have to append the file contents manually
 	sudo chown -R $USER $HOME/.kube
 	sudo chgrp -R $USER $HOME/.kube
-	
+
     sudo mv /root/.minikube $HOME/.minikube # this will overwrite any config you have.  You may have to append the file contents manually
 	sudo chown -R $USER $HOME/.minikube
-	sudo chgrp -R $USER $HOME/.minikube 
+	sudo chgrp -R $USER $HOME/.minikube
 This can also be done automatically by setting the env var CHANGE_MINIKUBE_NONE_USER=true`)
 		}
 		if err := cmdUtil.MaybeChownDirRecursiveToMinikubeUser(constants.GetMinipath()); err != nil {
