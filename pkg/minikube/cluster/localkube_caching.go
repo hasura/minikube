@@ -26,9 +26,9 @@ import (
 	download "github.com/jimmidyson/go-download"
 	"github.com/pkg/errors"
 
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/assets"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/assets"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
 )
 
 // localkubeCacher is a struct with methods designed for caching localkube

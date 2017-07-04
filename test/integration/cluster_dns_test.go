@@ -26,8 +26,8 @@ import (
 	"time"
 
 	"k8s.io/kubernetes/pkg/api"
-	commonutil "gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/test/integration/util"
+	commonutil "github.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
+	"github.com/hasura/hasuractl-go/pkg/minikube/test/integration/util"
 )
 
 func testClusterDNS(t *testing.T) {

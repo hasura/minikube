@@ -23,8 +23,8 @@ import (
 
 	"github.com/golang/glog"
 	"github.com/spf13/cobra"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/assets"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/assets"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
 )
 
 var addonListFormat string

@@ -25,8 +25,8 @@ import (
 	"time"
 
 	"github.com/docker/machine/libmachine/state"
-	commonutil "gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/test/integration/util"
+	commonutil "github.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
+	"github.com/hasura/hasuractl-go/pkg/minikube/test/integration/util"
 )
 
 func TestStartStop(t *testing.T) {

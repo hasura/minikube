@@ -23,8 +23,8 @@ import (
 	"github.com/golang/glog"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/cluster"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/machine"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/cluster"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/machine"
 )
 
 // sshCmd represents the docker-ssh command

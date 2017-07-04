@@ -25,11 +25,11 @@ import (
 	"github.com/golang/glog"
 	"github.com/pkg/browser"
 	"github.com/spf13/cobra"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/cluster"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/machine"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/service"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/cluster"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/machine"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/service"
 
-	commonutil "gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
+	commonutil "github.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
 )
 
 var (

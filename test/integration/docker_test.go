@@ -23,7 +23,7 @@ import (
 	"strings"
 	"testing"
 
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/test/integration/util"
+	"github.com/hasura/hasuractl-go/pkg/minikube/test/integration/util"
 )
 
 func TestDocker(t *testing.T) {

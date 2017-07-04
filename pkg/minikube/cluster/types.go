@@ -16,7 +16,7 @@ limitations under the License.
 
 package cluster
 
-import "gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
+import "github.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
 
 // MachineConfig contains the parameters used to start a cluster.
 type MachineConfig struct {

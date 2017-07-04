@@ -20,7 +20,7 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/kubernetes_versions"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/kubernetes_versions"
 )
 
 // getK8sVersionsCmd represents the ip command

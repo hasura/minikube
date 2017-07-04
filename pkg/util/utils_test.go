@@ -23,7 +23,7 @@ import (
 	"testing"
 
 	"github.com/pkg/errors"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
 )
 
 // Returns a function that will return n errors, then return successfully forever.

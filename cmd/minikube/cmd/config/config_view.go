@@ -24,8 +24,8 @@ import (
 	"github.com/golang/glog"
 	"github.com/spf13/cobra"
 
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/config"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/config"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
 )
 
 var configViewFormat string

@@ -23,7 +23,7 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	cmdutil "gitlab.com/hasura/hasuractl-go/pkg/minikube/cmd/util"
+	cmdutil "github.com/hasura/hasuractl-go/pkg/minikube/cmd/util"
 )
 
 const longDescription = `

@@ -22,10 +22,10 @@ import (
 	"text/template"
 
 	"github.com/spf13/cobra"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/assets"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/cluster"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/machine"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/service"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/assets"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/cluster"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/machine"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/service"
 )
 
 var (

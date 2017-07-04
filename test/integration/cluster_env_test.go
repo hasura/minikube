@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	commonutil "gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/test/integration/util"
+	commonutil "github.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
+	"github.com/hasura/hasuractl-go/pkg/minikube/test/integration/util"
 )
 
 func testClusterEnv(t *testing.T) {

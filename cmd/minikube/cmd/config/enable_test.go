@@ -26,8 +26,8 @@ import (
 
 	"github.com/docker/machine/libmachine/drivers"
 
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/assets"
-	"gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/tests"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/assets"
+	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/tests"
 )
 
 func TestEnableUnknownAddon(t *testing.T) {

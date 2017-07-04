@@ -24,7 +24,7 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/util/homedir"
 	"k8s.io/kubernetes/pkg/version"
-	minikubeVersion "gitlab.com/hasura/hasuractl-go/pkg/minikube/pkg/version"
+	minikubeVersion "github.com/hasura/hasuractl-go/pkg/minikube/pkg/version"
 )
 
 // APIServerPort is the port that the API server should listen on.
