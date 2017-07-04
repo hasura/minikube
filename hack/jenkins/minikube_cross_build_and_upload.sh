@@ -42,9 +42,9 @@ make cross
 # Build the e2e test target for Darwin and Linux. We don't run tests on Windows yet.
 # We build these on Linux, but run the tests on different platforms.
 # This makes it easier to provision slaves, since they don't need to have a go toolchain.'
-GOPATH=$(pwd)/_gopath GOOS=darwin GOARCH=amd64 go test -c gitlab.com/hasura/hasuractl-go/pkg/minikube/test/integration --tags=integration -o out/e2e-darwin-amd64
-GOPATH=$(pwd)/_gopath GOOS=linux GOARCH=amd64 go test -c gitlab.com/hasura/hasuractl-go/pkg/minikube/test/integration --tags=integration -o out/e2e-linux-amd64
-GOPATH=$(pwd)/_gopath GOOS=windows GOARCH=amd64 go test -c gitlab.com/hasura/hasuractl-go/pkg/minikube/test/integration --tags=integration -o out/e2e-windows-amd64.exe
+GOPATH=$(pwd)/_gopath GOOS=darwin GOARCH=amd64 go test -c github.com/hasura/hasuractl-go/pkg/minikube/test/integration --tags=integration -o out/e2e-darwin-amd64
+GOPATH=$(pwd)/_gopath GOOS=linux GOARCH=amd64 go test -c github.com/hasura/hasuractl-go/pkg/minikube/test/integration --tags=integration -o out/e2e-linux-amd64
+GOPATH=$(pwd)/_gopath GOOS=windows GOARCH=amd64 go test -c github.com/hasura/hasuractl-go/pkg/minikube/test/integration --tags=integration -o out/e2e-windows-amd64.exe
 cp -r test/integration/testdata out/
 
 # Don't upload the buildroot artifacts if they exist

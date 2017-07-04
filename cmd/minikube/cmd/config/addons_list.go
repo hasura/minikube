@@ -54,7 +54,7 @@ var addonsListCmd = &cobra.Command{
 func init() {
 	AddonsCmd.Flags().StringVar(&addonListFormat, "format", constants.DefaultAddonListFormat,
 		`Go template format string for the addon list output.  The format for Go templates can be found here: https://golang.org/pkg/text/template/
-For the list of accessible variables for the template, see the struct values here: https://godoc.org/gitlab.com/hasura/hasuractl-go/pkg/minikube/cmd/minikube/cmd/config#AddonListTemplate`)
+For the list of accessible variables for the template, see the struct values here: https://godoc.org/github.com/hasura/hasuractl-go/pkg/minikube/cmd/minikube/cmd/config#AddonListTemplate`)
 	AddonsCmd.AddCommand(addonsListCmd)
 }
 

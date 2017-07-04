@@ -51,7 +51,7 @@ var configViewCmd = &cobra.Command{
 func init() {
 	configViewCmd.Flags().StringVar(&configViewFormat, "format", constants.DefaultConfigViewFormat,
 		`Go template format string for the config view output.  The format for Go templates can be found here: https://golang.org/pkg/text/template/
-For the list of accessible variables for the template, see the struct values here: https://godoc.org/gitlab.com/hasura/hasuractl-go/pkg/minikube/cmd/minikube/cmd/config#ConfigViewTemplate`)
+For the list of accessible variables for the template, see the struct values here: https://godoc.org/github.com/hasura/hasuractl-go/pkg/minikube/cmd/minikube/cmd/config#ConfigViewTemplate`)
 	ConfigCmd.AddCommand(configViewCmd)
 }
 
