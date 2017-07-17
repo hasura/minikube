@@ -28,9 +28,9 @@ import (
 
 	"github.com/blang/semver"
 	"github.com/pkg/errors"
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/kubernetes_versions"
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/version"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/constants"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/kubernetes_versions"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/version"
 )
 
 type RetriableError struct {

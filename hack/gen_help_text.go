@@ -21,7 +21,7 @@ import (
 	"os"
 
 	"github.com/spf13/cobra/doc"
-	"github.com/hasura/hasuractl-go/pkg/minikube/cmd/minikube/cmd"
+	"github.com/hasura/hasuractl/pkg/minikube/cmd/minikube/cmd"
 )
 
 func main() {

@@ -22,9 +22,9 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	cmdUtil "github.com/hasura/hasuractl-go/pkg/minikube/cmd/util"
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/cluster"
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/machine"
+	cmdUtil "github.com/hasura/hasuractl/pkg/minikube/cmd/util"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/cluster"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/machine"
 )
 
 var (

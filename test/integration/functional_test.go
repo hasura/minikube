@@ -22,7 +22,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hasura/hasuractl-go/pkg/minikube/test/integration/util"
+	"github.com/hasura/hasuractl/pkg/minikube/test/integration/util"
 )
 
 func TestFunctional(t *testing.T) {

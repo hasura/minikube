@@ -26,8 +26,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/tests"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/constants"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/tests"
 )
 
 func TestGetISOFileURI(t *testing.T) {

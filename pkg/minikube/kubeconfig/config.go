@@ -31,9 +31,9 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/tools/clientcmd/api"
 	"k8s.io/client-go/tools/clientcmd/api/latest"
-	cmdUtil "github.com/hasura/hasuractl-go/pkg/minikube/cmd/util"
-	cfg "github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/config"
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
+	cmdUtil "github.com/hasura/hasuractl/pkg/minikube/cmd/util"
+	cfg "github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/config"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/constants"
 )
 
 type KubeConfigSetup struct {

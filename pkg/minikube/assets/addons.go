@@ -22,9 +22,9 @@ import (
 	"strconv"
 
 	"github.com/golang/glog"
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/config"
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/config"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/constants"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/util"
 )
 
 type Addon struct {

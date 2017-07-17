@@ -29,11 +29,11 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
-	configCmd "github.com/hasura/hasuractl-go/pkg/minikube/cmd/minikube/cmd/config"
-	"github.com/hasura/hasuractl-go/pkg/minikube/cmd/util"
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/config"
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/notify"
+	configCmd "github.com/hasura/hasuractl/pkg/minikube/cmd/minikube/cmd/config"
+	"github.com/hasura/hasuractl/pkg/minikube/cmd/util"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/config"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/constants"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/notify"
 )
 
 var dirs = [...]string{

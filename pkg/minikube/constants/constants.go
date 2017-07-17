@@ -21,7 +21,7 @@ import (
 	"os"
 	"path/filepath"
 
-	minikubeVersion "github.com/hasura/hasuractl-go/pkg/minikube/pkg/version"
+	minikubeVersion "github.com/hasura/hasuractl/pkg/minikube/pkg/version"
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/util/homedir"
 	"k8s.io/kubernetes/pkg/version"

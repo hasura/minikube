@@ -20,7 +20,7 @@ import (
 	"net"
 
 	"github.com/pkg/errors"
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/util"
 )
 
 var (

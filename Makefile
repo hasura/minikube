@@ -56,7 +56,7 @@ TAG ?= $(LOCALKUBE_VERSION)
 
 # Set the version information for the Kubernetes servers, and build localkube statically
 K8S_VERSION_LDFLAGS := $(shell $(PYTHON) hack/get_k8s_version.py 2>&1)
-MINIKUBE_LDFLAGS := -X github.com/hasura/hasuractl-go/pkg/minikube/pkg/version.version=$(VERSION) -X github.com/hasura/hasuractl-go/pkg/minikube/pkg/version.isoVersion=$(ISO_VERSION) -X github.com/hasura/hasuractl-go/pkg/minikube/pkg/version.isoPath=$(ISO_BUCKET)
+MINIKUBE_LDFLAGS := -X github.com/hasura/hasuractl/pkg/minikube/pkg/version.version=$(VERSION) -X github.com/hasura/hasuractl/pkg/minikube/pkg/version.isoVersion=$(ISO_VERSION) -X github.com/hasura/hasuractl/pkg/minikube/pkg/version.isoPath=$(ISO_BUCKET)
 LOCALKUBE_LDFLAGS := "$(K8S_VERSION_LDFLAGS) $(MINIKUBE_LDFLAGS) -s -w -extldflags '-static'"
 
 LOCALKUBEFILES := GOPATH=$(GOPATH) go list  -f '{{join .Deps "\n"}}' ./cmd/localkube/ | grep k8s.io | GOPATH=$(GOPATH) xargs go list -f '{{ range $$file := .GoFiles }} {{$$.Dir}}/{{$$file}}{{"\n"}}{{end}}'
@@ -77,16 +77,16 @@ endif
 
 out/minikube-darwin-amd64: $(GOPATH)/src/$(ORG) pkg/minikube/assets/assets.go $(shell $(MINIKUBEFILES))
 ifeq ($(IN_DOCKER),1)
-	CC=o64-clang CXX=o64-clang++ CGO_ENABLED=1 GOARCH=amd64 GOOS=darwin go build --installsuffix cgo -ldflags="$(MINIKUBE_LDFLAGS) $(K8S_VERSION_LDFLAGS)" -a -o $(BUILD_DIR)/minikube-darwin-amd64 github.com/hasura/hasuractl-go/pkg/minikube/cmd/minikube
+	CC=o64-clang CXX=o64-clang++ CGO_ENABLED=1 GOARCH=amd64 GOOS=darwin go build --installsuffix cgo -ldflags="$(MINIKUBE_LDFLAGS) $(K8S_VERSION_LDFLAGS)" -a -o $(BUILD_DIR)/minikube-darwin-amd64 github.com/hasura/hasuractl/pkg/minikube/cmd/minikube
 else
 	docker run -e IN_DOCKER=1 --workdir /go/src/$(REPOPATH) --entrypoint /usr/bin/make -v $(PWD):/go/src/$(REPOPATH) $(DARWIN_BUILD_IMAGE) out/minikube-darwin-amd64
 endif
 
 out/minikube-linux-amd64: $(GOPATH)/src/$(ORG) pkg/minikube/assets/assets.go $(shell $(MINIKUBEFILES))
-	CGO_ENABLED=1 GOARCH=amd64 GOOS=linux go build --installsuffix cgo -ldflags="$(MINIKUBE_LDFLAGS) $(K8S_VERSION_LDFLAGS)" -a -o $(BUILD_DIR)/minikube-linux-amd64 github.com/hasura/hasuractl-go/pkg/minikube/cmd/minikube
+	CGO_ENABLED=1 GOARCH=amd64 GOOS=linux go build --installsuffix cgo -ldflags="$(MINIKUBE_LDFLAGS) $(K8S_VERSION_LDFLAGS)" -a -o $(BUILD_DIR)/minikube-linux-amd64 github.com/hasura/hasuractl/pkg/minikube/cmd/minikube
 
 out/minikube-windows-amd64.exe: $(GOPATH)/src/$(ORG) pkg/minikube/assets/assets.go $(shell $(MINIKUBEFILES))
-	CGO_ENABLED=0 GOARCH=amd64 GOOS=windows go build --installsuffix cgo -ldflags="$(MINIKUBE_LDFLAGS) $(K8S_VERSION_LDFLAGS)" -a -o $(BUILD_DIR)/minikube-windows-amd64.exe github.com/hasura/hasuractl-go/pkg/minikube/cmd/minikube
+	CGO_ENABLED=0 GOARCH=amd64 GOOS=windows go build --installsuffix cgo -ldflags="$(MINIKUBE_LDFLAGS) $(K8S_VERSION_LDFLAGS)" -a -o $(BUILD_DIR)/minikube-windows-amd64.exe github.com/hasura/hasuractl/pkg/minikube/cmd/minikube
 
 minikube_iso: # old target kept for making tests happy
 	echo $(ISO_VERSION) > deploy/iso/minikube-iso/board/coreos/minikube/rootfs-overlay/etc/VERSION

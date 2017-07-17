@@ -23,9 +23,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/kubernetes_versions"
-	"github.com/hasura/hasuractl-go/pkg/minikube/test/integration/util"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/constants"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/kubernetes_versions"
+	"github.com/hasura/hasuractl/pkg/minikube/test/integration/util"
 )
 
 func TestVersionedFunctional(t *testing.T) {

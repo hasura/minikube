@@ -27,9 +27,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hasura/hasuractl-go/pkg/kubernetes/pkg/api"
-	commonutil "github.com/hasura/hasuractl-go/pkg/minikube/pkg/util"
-	"github.com/hasura/hasuractl-go/pkg/minikube/test/integration/util"
+	"github.com/hasura/hasuractl/pkg/kubernetes/pkg/api"
+	commonutil "github.com/hasura/hasuractl/pkg/minikube/pkg/util"
+	"github.com/hasura/hasuractl/pkg/minikube/test/integration/util"
 )
 
 func testMounting(t *testing.T) {

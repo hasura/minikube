@@ -19,7 +19,7 @@ package config
 import (
 	"testing"
 
-	pkgConfig "github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/config"
+	pkgConfig "github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/config"
 )
 
 var minikubeConfig = pkgConfig.MinikubeConfig{

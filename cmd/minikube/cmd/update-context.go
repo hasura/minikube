@@ -22,11 +22,11 @@ import (
 
 	"github.com/golang/glog"
 	"github.com/spf13/cobra"
-	cmdUtil "github.com/hasura/hasuractl-go/pkg/minikube/cmd/util"
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/cluster"
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
-	kcfg "github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/kubeconfig"
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/machine"
+	cmdUtil "github.com/hasura/hasuractl/pkg/minikube/cmd/util"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/cluster"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/constants"
+	kcfg "github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/kubeconfig"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/machine"
 )
 
 // updateContextCmd represents the update-context command

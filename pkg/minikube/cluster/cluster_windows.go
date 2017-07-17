@@ -27,8 +27,8 @@ import (
 	"github.com/golang/glog"
 	"github.com/pkg/errors"
 	"golang.org/x/sys/windows/registry"
-	cfg "github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/config"
-	"github.com/hasura/hasuractl-go/pkg/minikube/pkg/minikube/constants"
+	cfg "github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/config"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/constants"
 )
 
 func createHypervHost(config MachineConfig) drivers.Driver {
