@@ -31,7 +31,7 @@ ISO_BUCKET ?= minikube/iso
 GOOS ?= $(shell go env GOOS)
 GOARCH ?= $(shell go env GOARCH)
 BUILD_DIR ?= ./out
-ORG := k8s.io
+ORG := github.com/hasura/hasuractl/pkg
 REPOPATH ?= $(ORG)/minikube
 BUILD_IMAGE ?= gcr.io/google_containers/kube-cross:v1.7.1-0
 IS_EXE ?=
@@ -39,7 +39,7 @@ IS_EXE ?=
 ifeq ($(IN_DOCKER),1)
 	GOPATH := /go
 else
-	GOPATH := $(shell pwd)/_gopath
+	GOPATH := ${GOPATH}
 endif
 
 export GOPATH
