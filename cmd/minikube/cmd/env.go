@@ -28,13 +28,13 @@ import (
 	"github.com/docker/machine/libmachine"
 	"github.com/docker/machine/libmachine/shell"
 	"github.com/golang/glog"
-	"github.com/pkg/errors"
-	"github.com/spf13/cobra"
 	cmdUtil "github.com/hasura/hasuractl/pkg/minikube/cmd/util"
 	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/cluster"
 	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/config"
 	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/constants"
 	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/machine"
+	"github.com/pkg/errors"
+	"github.com/spf13/cobra"
 )
 
 const (
@@ -83,19 +83,19 @@ const (
 
 var usageHintMap = map[string]string{
 	"bash": `# Run this command to configure your shell:
-# eval $(minikube docker-env)
+# eval $(hasuractl local docker-env)
 `,
 	"fish": `# Run this command to configure your shell:
-# eval (minikube docker-env)
+# eval (hasuractl local docker-env)
 `,
 	"powershell": `# Run this command to configure your shell:
-# & minikube docker-env | Invoke-Expression
+# & hasuractl local docker-env | Invoke-Expression
 `,
 	"cmd": `REM Run this command to configure your shell:
-REM @FOR /f "tokens=*" %i IN ('minikube docker-env') DO @%i
+REM @FOR /f "tokens=*" %i IN ('hasuractl local docker-env') DO @%i
 `,
 	"emacs": `;; Run this command to configure your shell:
-;; (with-temp-buffer (shell-command "minikube docker-env" (current-buffer)) (eval-buffer))
+;; (with-temp-buffer (shell-command "hasuractl local docker-env" (current-buffer)) (eval-buffer))
 `,
 }
 
@@ -298,7 +298,7 @@ var DockerEnvCmd = &cobra.Command{
 			os.Exit(1)
 		}
 		if host.Driver.DriverName() == "none" {
-			fmt.Println(`'none' driver does not support 'minikube docker-env' command`)
+			fmt.Println(`'none' driver does not support 'hasuractl local docker-env' command`)
 			os.Exit(0)
 		}
 
