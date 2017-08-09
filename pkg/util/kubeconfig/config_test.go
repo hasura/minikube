@@ -25,7 +25,7 @@ import (
 	"testing"
 
 	"k8s.io/client-go/tools/clientcmd/api"
-	"k8s.io/minikube/pkg/util"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/util"
 )
 
 var fakeKubeCfg = []byte(`

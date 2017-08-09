@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"log"
 
-	"k8s.io/minikube/third_party/go9p"
+	"github.com/hasura/hasuractl/pkg/minikube/third_party/go9p"
 )
 
 func StartServer(addrVal string, debugVal int, rootVal string) {

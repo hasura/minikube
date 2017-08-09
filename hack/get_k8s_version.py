@@ -22,7 +22,7 @@ import sys
 from datetime import datetime
 
 K8S_PACKAGE = 'k8s.io/kubernetes/'
-X_ARGS = ['-X k8s.io/minikube/vendor/k8s.io/kubernetes/pkg/version.', '-X k8s.io/minikube/vendor/k8s.io/client-go/pkg/version.']
+X_ARGS = ['-X github.com/hasura/hasuractl/pkg/minikube/vendor/k8s.io/kubernetes/pkg/version.', '-X github.com/hasura/hasuractl/pkg/minikube/vendor/k8s.io/client-go/pkg/version.']
 
 def get_rev():
   return 'gitCommit=%s' % get_from_godep('Rev')

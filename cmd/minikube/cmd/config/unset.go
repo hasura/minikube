@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-	pkgConfig "k8s.io/minikube/pkg/minikube/config"
+	pkgConfig "github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/config"
 
 	"github.com/spf13/cobra"
 )

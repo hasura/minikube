@@ -3,7 +3,7 @@ os: linux
 
 go:
   - 1.8.3
-go_import_path: k8s.io/minikube
+go_import_path: github.com/hasura/hasuractl/pkg/minikube
 
 install:
   - echo "Don't run anything."

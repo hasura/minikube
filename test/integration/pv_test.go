@@ -27,8 +27,8 @@ import (
 
 	"k8s.io/kubernetes/pkg/api"
 	"k8s.io/kubernetes/pkg/apis/storage"
-	commonutil "k8s.io/minikube/pkg/util"
-	"k8s.io/minikube/test/integration/util"
+	commonutil "github.com/hasura/hasuractl/pkg/minikube/pkg/util"
+	"github.com/hasura/hasuractl/pkg/minikube/test/integration/util"
 )
 
 var (

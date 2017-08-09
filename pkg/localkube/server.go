@@ -20,7 +20,7 @@ import (
 	"os"
 	"time"
 
-	"k8s.io/minikube/pkg/util"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/util"
 )
 
 // Server represents a component that Kubernetes depends on. It allows for the management of

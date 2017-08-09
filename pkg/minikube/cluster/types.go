@@ -16,7 +16,7 @@ limitations under the License.
 
 package cluster
 
-import "k8s.io/minikube/pkg/util"
+import "github.com/hasura/hasuractl/pkg/minikube/pkg/util"
 
 // MachineConfig contains the parameters used to start a cluster.
 type MachineConfig struct {

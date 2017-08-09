@@ -24,12 +24,12 @@ import (
 	"github.com/docker/machine/libmachine/state"
 	"github.com/golang/glog"
 	"github.com/spf13/cobra"
-	cmdUtil "k8s.io/minikube/cmd/util"
-	"k8s.io/minikube/pkg/minikube/cluster"
-	"k8s.io/minikube/pkg/minikube/config"
-	"k8s.io/minikube/pkg/minikube/constants"
-	"k8s.io/minikube/pkg/minikube/machine"
-	"k8s.io/minikube/pkg/util/kubeconfig"
+	cmdUtil "github.com/hasura/hasuractl/pkg/minikube/cmd/util"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/cluster"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/config"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/constants"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/machine"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/util/kubeconfig"
 )
 
 var statusFormat string
@@ -103,6 +103,6 @@ var statusCmd = &cobra.Command{
 func init() {
 	statusCmd.Flags().StringVar(&statusFormat, "format", constants.DefaultStatusFormat,
 		`Go template format string for the status output.  The format for Go templates can be found here: https://golang.org/pkg/text/template/
-For the list accessible variables for the template, see the struct values here: https://godoc.org/k8s.io/minikube/cmd/minikube/cmd#Status`)
+For the list accessible variables for the template, see the struct values here: https://godoc.org/github.com/hasura/hasuractl/pkg/minikube/cmd/minikube/cmd#Status`)
 	RootCmd.AddCommand(statusCmd)
 }

@@ -29,9 +29,9 @@ import (
 
 	"github.com/blang/semver"
 	"github.com/spf13/viper"
-	"k8s.io/minikube/pkg/minikube/config"
-	"k8s.io/minikube/pkg/minikube/tests"
-	"k8s.io/minikube/pkg/version"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/config"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/tests"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/version"
 )
 
 func TestShouldCheckURL(t *testing.T) {

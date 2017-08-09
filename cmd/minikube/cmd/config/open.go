@@ -22,11 +22,11 @@ import (
 	"text/template"
 
 	"github.com/spf13/cobra"
-	"k8s.io/minikube/pkg/minikube/assets"
-	"k8s.io/minikube/pkg/minikube/cluster"
-	"k8s.io/minikube/pkg/minikube/constants"
-	"k8s.io/minikube/pkg/minikube/machine"
-	"k8s.io/minikube/pkg/minikube/service"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/assets"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/cluster"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/constants"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/machine"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/service"
 )
 
 var (

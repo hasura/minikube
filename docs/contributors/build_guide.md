@@ -17,7 +17,7 @@ Clone minikube into your go path under `$GOPATH/src/k8s.io`
 
 ```
 $ git clone https://github.com/kubernetes/minikube.git $GOPATH/src/k8s.io
-$ cd $GOPATH/src/k8s.io/minikube
+$ cd $GOPATH/src/github.com/hasura/hasuractl/pkg/minikube
 $ make
 ```
 

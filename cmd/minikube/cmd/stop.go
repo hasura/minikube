@@ -21,13 +21,13 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	cmdUtil "k8s.io/minikube/cmd/util"
-	"k8s.io/minikube/pkg/minikube/cluster"
-	"k8s.io/minikube/pkg/minikube/machine"
+	cmdUtil "github.com/hasura/hasuractl/pkg/minikube/cmd/util"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/cluster"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/machine"
 )
 
 // stopCmd represents the stop command
-var stopCmd = &cobra.Command{
+var StopCmd = &cobra.Command{
 	Use:   "stop",
 	Short: "Stops a running local kubernetes cluster",
 	Long: `Stops a local kubernetes cluster running in Virtualbox. This command stops the VM
@@ -54,5 +54,5 @@ itself, leaving all files intact. The cluster can be started again with the "sta
 }
 
 func init() {
-	RootCmd.AddCommand(stopCmd)
+	RootCmd.AddCommand(StopCmd)
 }

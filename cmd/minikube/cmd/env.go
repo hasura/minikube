@@ -30,11 +30,11 @@ import (
 	"github.com/golang/glog"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	cmdUtil "k8s.io/minikube/cmd/util"
-	"k8s.io/minikube/pkg/minikube/cluster"
-	"k8s.io/minikube/pkg/minikube/config"
-	"k8s.io/minikube/pkg/minikube/constants"
-	"k8s.io/minikube/pkg/minikube/machine"
+	cmdUtil "github.com/hasura/hasuractl/pkg/minikube/cmd/util"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/cluster"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/config"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/constants"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/machine"
 )
 
 const (
@@ -83,19 +83,19 @@ const (
 
 var usageHintMap = map[string]string{
 	"bash": `# Run this command to configure your shell:
-# eval $(minikube docker-env)
+# eval $(hasuractl local docker-env)
 `,
 	"fish": `# Run this command to configure your shell:
-# eval (minikube docker-env)
+# eval (hasuractl local docker-env)
 `,
 	"powershell": `# Run this command to configure your shell:
-# & minikube docker-env | Invoke-Expression
+# & hasuractl local docker-env | Invoke-Expression
 `,
 	"cmd": `REM Run this command to configure your shell:
-REM @FOR /f "tokens=*" %i IN ('minikube docker-env') DO @%i
+REM @FOR /f "tokens=*" %i IN ('hasuractl local docker-env') DO @%i
 `,
 	"emacs": `;; Run this command to configure your shell:
-;; (with-temp-buffer (shell-command "minikube docker-env" (current-buffer)) (eval-buffer))
+;; (with-temp-buffer (shell-command "hasuractl local docker-env" (current-buffer)) (eval-buffer))
 `,
 }
 
@@ -280,7 +280,7 @@ func (EnvNoProxyGetter) GetNoProxyVar() (string, string) {
 }
 
 // envCmd represents the docker-env command
-var dockerEnvCmd = &cobra.Command{
+var DockerEnvCmd = &cobra.Command{
 	Use:   "docker-env",
 	Short: "Sets up docker env variables; similar to '$(docker-machine env)'",
 	Long:  `Sets up docker env variables; similar to '$(docker-machine env)'.`,
@@ -323,10 +323,10 @@ var dockerEnvCmd = &cobra.Command{
 }
 
 func init() {
-	RootCmd.AddCommand(dockerEnvCmd)
+	RootCmd.AddCommand(DockerEnvCmd)
 	defaultShellDetector = &LibmachineShellDetector{}
 	defaultNoProxyGetter = &EnvNoProxyGetter{}
-	dockerEnvCmd.Flags().BoolVar(&noProxy, "no-proxy", false, "Add machine IP to NO_PROXY environment variable")
-	dockerEnvCmd.Flags().StringVar(&forceShell, "shell", "", "Force environment to be configured for a specified shell: [fish, cmd, powershell, tcsh, bash, zsh], default is auto-detect")
-	dockerEnvCmd.Flags().BoolVarP(&unset, "unset", "u", false, "Unset variables instead of setting them")
+	DockerEnvCmd.Flags().BoolVar(&noProxy, "no-proxy", false, "Add machine IP to NO_PROXY environment variable")
+	DockerEnvCmd.Flags().StringVar(&forceShell, "shell", "", "Force environment to be configured for a specified shell: [fish, cmd, powershell, tcsh, bash, zsh], default is auto-detect")
+	DockerEnvCmd.Flags().BoolVarP(&unset, "unset", "u", false, "Unset variables instead of setting them")
 }

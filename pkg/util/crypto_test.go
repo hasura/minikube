@@ -25,7 +25,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"k8s.io/minikube/pkg/minikube/constants"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/constants"
 )
 
 func TestGenerateCACert(t *testing.T) {

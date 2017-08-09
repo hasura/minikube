@@ -26,10 +26,10 @@ import (
 	"net/http"
 	"testing"
 
-	"k8s.io/minikube/pkg/minikube/constants"
-	"k8s.io/minikube/pkg/minikube/kubernetes_versions"
-	"k8s.io/minikube/pkg/minikube/notify"
-	"k8s.io/minikube/pkg/util"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/constants"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/kubernetes_versions"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/notify"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/util"
 )
 
 const (

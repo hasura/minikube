@@ -51,7 +51,7 @@ TAG ?= $(LOCALKUBE_VERSION)
 
 # Set the version information for the Kubernetes servers, and build localkube statically
 K8S_VERSION_LDFLAGS := $(shell $(PYTHON) hack/get_k8s_version.py 2>&1)
-MINIKUBE_LDFLAGS := -X k8s.io/minikube/pkg/version.version=$(VERSION) -X k8s.io/minikube/pkg/version.isoVersion=$(ISO_VERSION) -X k8s.io/minikube/pkg/version.isoPath=$(ISO_BUCKET)
+MINIKUBE_LDFLAGS := -X github.com/hasura/hasuractl/pkg/minikube/pkg/version.version=$(VERSION) -X github.com/hasura/hasuractl/pkg/minikube/pkg/version.isoVersion=$(ISO_VERSION) -X github.com/hasura/hasuractl/pkg/minikube/pkg/version.isoPath=$(ISO_BUCKET)
 LOCALKUBE_LDFLAGS := "$(K8S_VERSION_LDFLAGS) $(MINIKUBE_LDFLAGS) -s -w -extldflags '-static'"
 
 LOCALKUBEFILES := GOPATH=$(GOPATH) go list  -f '{{join .Deps "\n"}}' ./cmd/localkube/ | grep k8s.io | GOPATH=$(GOPATH) xargs go list -f '{{ range $$file := .GoFiles }} {{$$.Dir}}/{{$$file}}{{"\n"}}{{end}}'
@@ -69,7 +69,7 @@ KUBE_CROSS_DOCKER_CMD := docker run -w /go/src/$(REPOPATH) --user $(shell id -u)
 
 # $(call MINIKUBE_GO_BUILD_CMD, output file, OS)
 define MINIKUBE_GO_BUILD_CMD
-	$($(shell echo MINIKUBE_ENV_$(2) | tr a-z A-Z)) go build --installsuffix cgo -ldflags="$(MINIKUBE_LDFLAGS) $(K8S_VERSION_LDFLAGS)" -a -o $(1) k8s.io/minikube/cmd/minikube
+	$($(shell echo MINIKUBE_ENV_$(2) | tr a-z A-Z)) go build --installsuffix cgo -ldflags="$(MINIKUBE_LDFLAGS) $(K8S_VERSION_LDFLAGS)" -a -o $(1) github.com/hasura/hasuractl/pkg/minikube/cmd/minikube
 endef
 
 ifeq ($(BUILD_IN_DOCKER),y)

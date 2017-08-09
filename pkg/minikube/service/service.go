@@ -36,8 +36,8 @@ import (
 	"text/template"
 
 	"k8s.io/apimachinery/pkg/labels"
-	"k8s.io/minikube/pkg/minikube/cluster"
-	"k8s.io/minikube/pkg/util"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/cluster"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/util"
 )
 
 type K8sClient interface {

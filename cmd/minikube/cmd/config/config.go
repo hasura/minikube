@@ -25,8 +25,8 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	"k8s.io/minikube/pkg/minikube/config"
-	"k8s.io/minikube/pkg/minikube/constants"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/config"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/constants"
 )
 
 type setFn func(string, string) error

@@ -38,11 +38,11 @@ import (
 	"github.com/golang/glog"
 	"github.com/pkg/errors"
 
-	"k8s.io/minikube/pkg/minikube/assets"
-	cfg "k8s.io/minikube/pkg/minikube/config"
-	"k8s.io/minikube/pkg/minikube/constants"
-	"k8s.io/minikube/pkg/minikube/sshutil"
-	"k8s.io/minikube/pkg/util"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/assets"
+	cfg "github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/config"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/constants"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/sshutil"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/util"
 )
 
 var (

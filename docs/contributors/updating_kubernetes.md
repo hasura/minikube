@@ -52,7 +52,7 @@ Make sure to also fetch tags, as Godep relies on these.
 5. Update godeps
 
  ```shell
- cd $GOPATH/src/k8s.io/minikube
+ cd $GOPATH/src/github.com/hasura/hasuractl/pkg/minikube
  ./hack/godeps/godep-save.sh
  ```
 
@@ -60,10 +60,10 @@ Make sure to also fetch tags, as Godep relies on these.
 
  ```shell
  python hack/get_k8s_version.py
- -X k8s.io/minikube/vendor/k8s.io/kubernetes/pkg/version.gitCommit=caf9a4d87700ba034a7b39cced19bd5628ca6aa3 -X k8s.io/minikube/vendor/k8s.io/kubernetes/pkg/version.gitVersion=v1.3.0-beta.2 -X k8s.io/minikube/vendor/k8s.io/kubernetes/pkg/version.gitTreeState=clean
+ -X github.com/hasura/hasuractl/pkg/minikube/vendor/k8s.io/kubernetes/pkg/version.gitCommit=caf9a4d87700ba034a7b39cced19bd5628ca6aa3 -X github.com/hasura/hasuractl/pkg/minikube/vendor/k8s.io/kubernetes/pkg/version.gitVersion=v1.3.0-beta.2 -X github.com/hasura/hasuractl/pkg/minikube/vendor/k8s.io/kubernetes/pkg/version.gitTreeState=clean
 ```
 
-The `-X k8s.io/minikube/vendor/k8s.io/kubernetes/pkg/version.gitVersion` flag should contain the right tag.
+The `-X github.com/hasura/hasuractl/pkg/minikube/vendor/k8s.io/kubernetes/pkg/version.gitVersion` flag should contain the right tag.
 
 Once you've build and started minikube, you can also run:
 

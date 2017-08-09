@@ -26,7 +26,7 @@ import (
 	"github.com/golang/glog"
 	download "github.com/jimmidyson/go-download"
 	"github.com/pkg/errors"
-	"k8s.io/minikube/pkg/minikube/constants"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/constants"
 )
 
 const fileScheme = "file"

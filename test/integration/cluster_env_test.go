@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	commonutil "k8s.io/minikube/pkg/util"
-	"k8s.io/minikube/test/integration/util"
+	commonutil "github.com/hasura/hasuractl/pkg/minikube/pkg/util"
+	"github.com/hasura/hasuractl/pkg/minikube/test/integration/util"
 )
 
 func testClusterEnv(t *testing.T) {

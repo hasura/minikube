@@ -24,12 +24,12 @@ import (
 
 	"github.com/docker/machine/libmachine/drivers"
 	"github.com/pkg/errors"
-	"k8s.io/minikube/pkg/minikube/assets"
-	"k8s.io/minikube/pkg/minikube/cluster"
-	"k8s.io/minikube/pkg/minikube/config"
-	"k8s.io/minikube/pkg/minikube/machine"
-	"k8s.io/minikube/pkg/minikube/sshutil"
-	"k8s.io/minikube/pkg/minikube/storageclass"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/assets"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/cluster"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/config"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/machine"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/sshutil"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/storageclass"
 )
 
 // Runs all the validation or callback functions and collects errors

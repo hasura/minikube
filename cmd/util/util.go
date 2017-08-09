@@ -38,10 +38,10 @@ import (
 	"github.com/pkg/errors"
 	"github.com/spf13/viper"
 	"golang.org/x/crypto/ssh/terminal"
-	minikubeConfig "k8s.io/minikube/cmd/minikube/cmd/config"
-	"k8s.io/minikube/pkg/minikube/config"
-	"k8s.io/minikube/pkg/minikube/constants"
-	"k8s.io/minikube/pkg/version"
+	minikubeConfig "github.com/hasura/hasuractl/pkg/minikube/cmd/minikube/cmd/config"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/config"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/minikube/constants"
+	"github.com/hasura/hasuractl/pkg/minikube/pkg/version"
 )
 
 type ServiceContext struct {
