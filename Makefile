@@ -32,7 +32,7 @@ ISO_BUCKET ?= minikube/iso
 GOOS ?= $(shell go env GOOS)
 GOARCH ?= $(shell go env GOARCH)
 BUILD_DIR ?= ./out
-ORG := k8s.io
+ORG := github.com/hasura/hasuractl/pkg
 REPOPATH ?= $(ORG)/minikube
 
 TAR_TARGETS_LINUX   := out/minikube-linux-amd64
