@@ -20,6 +20,7 @@ import json
 import subprocess
 import sys
 from datetime import datetime
+import os
 
 K8S_PACKAGE = 'k8s.io/kubernetes/'
 X_ARGS = ['-X github.com/hasura/hasuractl/pkg/minikube/vendor/k8s.io/kubernetes/pkg/version.', '-X github.com/hasura/hasuractl/pkg/minikube/vendor/k8s.io/client-go/pkg/version.']
@@ -31,7 +32,7 @@ def get_version():
     return 'gitVersion=%s' % get_from_godep('Comment')
 
 def get_from_godep(key):
-  with open('./Godeps/Godeps.json') as f:
+  with open(os.environ['GOPATH'] + '/src/github.com/hasura/hasuractl/pkg/minikube/Godeps/Godeps.json') as f:
     contents = json.load(f)
     for dep in contents['Deps']:
       if dep['ImportPath'].startswith(K8S_PACKAGE):
